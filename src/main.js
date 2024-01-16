@@ -110,5 +110,6 @@ function onFormSubmit(e) {
         messageColor: '#FAFAFB',
         iconUrl: '/img/bi_x-octagon.svg',
       });
+      formInput.value = '';
     });
 }
