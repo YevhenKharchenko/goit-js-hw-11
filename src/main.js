@@ -37,7 +37,7 @@ function onFormSubmit(e) {
           position: 'topRight',
           color: '#EF4040',
           messageColor: '#FAFAFB',
-          iconUrl: '../img/bi_x-octagon.svg',
+          iconUrl: './img/bi_x-octagon.svg',
         });
       }
 
