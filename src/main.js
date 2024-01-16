@@ -9,6 +9,12 @@ const gallery = document.querySelector('.gallery');
 const loaderAnimation = document.createElement('div');
 loaderAnimation.classList.add('loader');
 
+const instanceOfLightbox = new simpleLightbox('li a', {
+  captionsData: 'alt',
+  captionClass: 'img-caption',
+  captionDelay: 250,
+});
+
 form.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(e) {
@@ -92,12 +98,6 @@ function onFormSubmit(e) {
       loaderAnimation.remove();
       gallery.insertAdjacentHTML('beforeend', markup);
       formInput.value = '';
-
-      const instanceOfLightbox = new simpleLightbox('li a', {
-        captionsData: 'alt',
-        captionClass: 'img-caption',
-        captionDelay: 250,
-      });
 
       instanceOfLightbox.refresh();
     })
