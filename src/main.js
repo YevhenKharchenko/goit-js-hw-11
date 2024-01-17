@@ -2,6 +2,7 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import simpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
+import { config } from '/config.js';
 
 const form = document.querySelector('.form');
 const formInput = document.querySelector('.form-input');
@@ -23,7 +24,7 @@ function onFormSubmit(e) {
   form.after(loaderAnimation);
 
   const inputQuery = formInput.value;
-  const userKey = '41829663-a3becd9e4f80ae5dbcbf223ac';
+  const userKey = config.pixabayApiKey;
   const searchParams = new URLSearchParams({
     key: `${userKey}`,
     q: `${inputQuery}`,
