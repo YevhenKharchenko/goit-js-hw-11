@@ -2,7 +2,6 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import simpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-import { pixabayApiKey } from '../config.js';
 
 const form = document.querySelector('.form');
 const formInput = document.querySelector('.form-input');
@@ -24,7 +23,7 @@ function onFormSubmit(e) {
   form.after(loaderAnimation);
 
   const inputQuery = formInput.value;
-  const userKey = pixabayApiKey;
+  const userKey = '41829663-a3becd9e4f80ae5dbcbf223ac';
   const searchParams = new URLSearchParams({
     key: `${userKey}`,
     q: `${inputQuery}`,
@@ -50,7 +49,7 @@ function onFormSubmit(e) {
           position: 'topRight',
           color: '#EF4040',
           messageColor: '#FAFAFB',
-          iconUrl: '../img/bi_x-octagon.svg',
+          iconUrl: '../src/img/bi_x-octagon.svg',
         });
       }
 
