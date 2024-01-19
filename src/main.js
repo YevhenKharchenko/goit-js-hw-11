@@ -2,7 +2,7 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import simpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-import { pixabayApiKey } from '/config.js';
+import { pixabayApiKey } from '../config.js';
 
 const form = document.querySelector('.form');
 const formInput = document.querySelector('.form-input');
