@@ -49,7 +49,7 @@ function onFormSubmit(e) {
           position: 'topRight',
           color: '#EF4040',
           messageColor: '#FAFAFB',
-          iconUrl: '../src/img/bi_x-octagon.svg',
+          iconUrl: './src/img/bi_x-octagon.svg',
         });
       }
 
